@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CoffeeDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="6dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/CoffeeDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/coffeenamedetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CoffeeDetailImage"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Coffee Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/coffeedetaildetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="coffee detail"
+                android:textSize="18sp"
+                android:layout_below="@id/coffeenamedetail"
+                android:layout_margin="10dp"/>
+            
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/coffeedetaildetail"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="18sp"
+                    android:id="@+id/decrementcoffee"/>
+
+                <TextView
+                    android:id="@+id/quantityDetailNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="18sp"
+                    android:id="@+id/incrementcoffee"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linear"
+                android:id="@+id/orderINFO"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:text="Total is "/>
+            
+            <Button
+                android:id="@+id/ordercoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Coffee"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:layout_below="@+id/linear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"/>
+
+            
+
+
+
+        </RelativeLayout>
+
+
+
+        
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
